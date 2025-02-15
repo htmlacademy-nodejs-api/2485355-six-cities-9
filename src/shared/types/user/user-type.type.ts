@@ -1,1 +1,1 @@
-export type UserType = "обычный" | "pro";
+export type UserType = 'обычный' | 'pro';

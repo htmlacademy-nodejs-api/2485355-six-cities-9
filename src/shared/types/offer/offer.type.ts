@@ -1,7 +1,7 @@
-import { City } from "./city.type.js";
-import { HousingType } from "./housing-type.type.js";
-import { Amenities } from "./amenties.type.js";
-import { Coordinates } from "./coordinates.type.js";
+import { City } from './city.type.js';
+import { HousingType } from './housing-type.type.js';
+import { Amenities } from './amenties.type.js';
+import { Coordinates } from './coordinates.type.js';
 
 export type Offer = {
   title: string;

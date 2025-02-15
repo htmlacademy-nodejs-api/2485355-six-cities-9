@@ -1,1 +1,1 @@
-export type HousingType = "apartment" | "house" | "room" | "hotel";
+export type HousingType = 'apartment' | 'house' | 'room' | 'hotel';
