@@ -1,0 +1,117 @@
+{
+  "text": [
+    "Great place, had a wonderful stay!",
+    "Nice apartment but the wifi was slow.",
+    "Amazing location and very clean.",
+    "The host was very friendly and helpful."
+  ],
+  "createdAt": [
+    "2023-10-05T14:20:00Z",
+    "2023-10-03T16:45:00Z",
+    "2023-09-28T09:15:00Z",
+    "2023-09-25T18:30:00Z"
+  ],
+  "rating": [1, 2, 3, 4, 5],
+  "author": [
+    {
+      "name": "Иван Иванов",
+      "email": "snow@pisem.local",
+      "avatar": "user.jpg",
+      "password": "password123",
+      "type": "обычный"
+    },
+    {
+      "name": "Олег Сидоров",
+      "email": "president@dka.local",
+      "avatar": "photo.jpg",
+      "password": "securepassword",
+      "type": "pro"
+    },
+    {
+      "name": "Пьер Безухов",
+      "email": "fish@big.local",
+      "avatar": "awesome-avatar.jpg",
+      "password": "pierre123",
+      "type": "обычный"
+    }
+  ],
+  "title": [
+    "Cozy Apartment in City Center",
+    "Luxury Villa with Ocean View",
+    "Modern Loft in Downtown",
+    "Rustic Cabin in the Woods"
+  ],
+  "description": [
+    "A cozy apartment located in the heart of the city, perfect for couples and small families.",
+    "Experience luxury in this stunning villa with breathtaking ocean views.",
+    "A modern loft with industrial design, ideal for urban explorers.",
+    "A rustic cabin surrounded by nature, perfect for a peaceful getaway."
+  ],
+  "publicationDate": [
+    "2023-10-01T12:00:00Z",
+    "2023-09-15T09:30:00Z",
+    "2023-08-20T14:00:00Z",
+    "2023-07-10T10:45:00Z"
+  ],
+  "city": ["City1", "City2", "City3", "City4", "City5", "City6"],
+  "previewImage": [
+    "cozy-apartment.jpg",
+    "luxury-villa.jpg",
+    "modern-loft.jpg",
+    "rustic-cabin.jpg"
+  ],
+  "photos": [
+    [{ "src": "cozy-apartment-1.jpg" }, { "src": "cozy-apartment-2.jpg" }],
+    [{ "src": "luxury-villa-1.jpg" }, { "src": "luxury-villa-2.jpg" }],
+    [{ "src": "modern-loft-1.jpg" }, { "src": "modern-loft-2.jpg" }],
+    [{ "src": "rustic-cabin-1.jpg" }, { "src": "rustic-cabin-2.jpg" }]
+  ],
+  "isPremium": [true, false],
+  "isFavorite": [true, false],
+  "housingType": ["apartment", "house", "room", "hotel"],
+  "roomCount": [1, 2, 3, 4, 5],
+  "guestCount": [1, 2, 4, 6, 8],
+  "rentalPrice": [50, 100, 150, 200, 250, 300],
+  "amenities": [
+    ["Breakfast", "Air conditioning", "Laptop friendly workspace"],
+    ["Washer", "Towels", "Fridge"],
+    ["Baby seat", "Towels", "Fridge"],
+    ["Air conditioning", "Washer", "Fridge"]
+  ],
+  "commentCount": [0, 1, 2, 3, 4, 5],
+  "coordinates": [
+    { "latitude": 34.0522, "longitude": -118.2437 },
+    { "latitude": 36.1699, "longitude": -115.1398 },
+    { "latitude": 40.7128, "longitude": -74.0060 },
+    { "latitude": 51.5074, "longitude": -0.1278 }
+  ],
+  "name": [
+    "Иван Иванов",
+    "Олег Сидоров",
+    "Пьер Безухов",
+    "Роланд Дискейн",
+    "Холи Гибни"
+  ],
+  "email": [
+    "snow@pisem.local",
+    "president@dka.local",
+    "fish@big.local",
+    "test@pisem.local",
+    "freedom@pisem.local"
+  ],
+  "avatar": [
+    "user.jpg",
+    "photo.jpg",
+    "awesome-avatar.jpg",
+    "roland.jpg",
+    "smite.jpg"
+  ],
+  "password": [
+    "password123",
+    "securepassword",
+    "pierre123",
+    "roland123",
+    "holly123"
+  ],
+  "type": ["обычный", "pro"]
+}
