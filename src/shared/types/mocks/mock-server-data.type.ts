@@ -13,12 +13,12 @@ export type MockServerData = {
   titles: string[];
   descriptions: string[];
   cities: City[];
-  previewImage: string[];
+  previewImages: string[];
   photos: Photo[];
   isPremium: boolean[];
   isFavorite: boolean[];
   housingTypes: HousingType[];
-  amenities: Amenitie[][];
+  amenities: Amenitie[];
   coordinates: Coordinates[];
   names: string[];
   emails: string[];

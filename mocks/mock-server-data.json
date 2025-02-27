@@ -18,7 +18,7 @@
       "2023-09-18T08:05:00Z",
       "2023-09-15T17:55:00Z"
     ],
-    "author": [
+    "authors": [
       {
         "name": "Иван Иванов",
         "email": "snow@pisem.local",
@@ -69,7 +69,7 @@
         "type": "обычный"
       }
     ],
-    "title": [
+    "titles": [
       "Cozy Apartment in City Center",
       "Luxury Villa with Ocean View",
       "Modern Loft in Downtown",
@@ -78,7 +78,7 @@
       "Charming Studio Near the Beach",
       "Elegant Penthouse with Skyline View"
     ],
-    "description": [
+    "descriptions": [
       "A cozy apartment located in the heart of the city, perfect for couples and small families.",
       "Experience luxury in this stunning villa with breathtaking ocean views.",
       "A modern loft with industrial design, ideal for urban explorers.",
@@ -87,7 +87,7 @@
       "A charming studio located just steps away from the beach, perfect for solo travelers.",
       "An elegant penthouse offering stunning skyline views, perfect for a luxurious stay."
     ],
-    "city": [
+    "cities": [
       "City1",
       "City2",
       "City3",
@@ -95,7 +95,7 @@
       "City5",
       "City6"
     ],
-    "previewImage": [
+    "previewImages": [
       "cozy-apartment.jpg",
       "luxury-villa.jpg",
       "modern-loft.jpg",
@@ -118,7 +118,7 @@
     ],
     "isPremium": [true, false, true, false, true, false, true],
     "isFavorite": [true, false, true, false, true, false, true],
-    "housingType": [
+    "housingTypes": [
       "apartment",
       "house",
       "room",
@@ -128,13 +128,13 @@
       "penthouse"
     ],
     "amenities": [
-      ["Breakfast", "Air conditioning", "Laptop friendly workspace"],
-      ["Washer", "Towels", "Fridge"],
-      ["Baby seat", "Towels", "Fridge"],
-      ["Air conditioning", "Washer", "Fridge"],
-      ["Pool", "Garden", "BBQ"],
-      ["Beach access", "Kitchenette", "WiFi"],
-      ["Gym", "Sauna", "Balcony"]
+      "Breakfast", "Air conditioning", "Laptop friendly workspace",
+      "Washer", "Towels", "Fridge",
+      "Baby seat", "Towels", "Fridge",
+      "Air conditioning", "Washer", "Fridge",
+      "Pool", "Garden", "BBQ",
+      "Beach access", "Kitchenette", "WiFi",
+      "Gym", "Sauna", "Balcony"
     ],
     "coordinates": [
       { "latitude": 34.0522, "longitude": -118.2437 },

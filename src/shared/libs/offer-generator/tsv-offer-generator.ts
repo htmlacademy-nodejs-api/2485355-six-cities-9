@@ -23,7 +23,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const title = getRandomItem(this.mockData.titles);
     const description = getRandomItem(this.mockData.descriptions);
     const city = getRandomItem(this.mockData.cities);
-    const previewImage = getRandomItem(this.mockData.previewImage);
+    const previewImage = getRandomItem(this.mockData.previewImages);
     const photos = getRandomItems(this.mockData.photos).map((photo) => photo.src).join(';');
     const isPremium = getRandomItem(this.mockData.isPremium) ? 'Да' : 'Нет';
     const isFavorite = getRandomItem(this.mockData.isFavorite) ? 'Да' : 'Нет';
@@ -57,7 +57,7 @@ export class TSVOfferGenerator implements OfferGenerator {
       guestCount,
       rentalPrice,
       amenities,
-      author.avatar,
+      author.name,
       commentCount,
       coordinatesString
     ].join('\t');
