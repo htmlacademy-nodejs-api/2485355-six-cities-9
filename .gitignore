@@ -3,10 +3,11 @@
 /build/
 /lib/
 /dist/
-/mocks/
+/mocks/*
 /docs/
 .idea/*
 
 .DS_Store
 coverage
 *.log
+.env
