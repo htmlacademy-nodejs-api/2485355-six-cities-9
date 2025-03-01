@@ -3,7 +3,7 @@
 /build/
 /lib/
 /dist/
-/mocks/
+/mocks/*
 /docs/
 .idea/*
 
