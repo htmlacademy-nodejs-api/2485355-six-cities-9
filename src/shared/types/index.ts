@@ -8,3 +8,4 @@ export { User } from './user/user.type.js';
 export { UserType } from './user/user-type.type.js';
 export { Comment } from './comment/comment.type.js';
 export { MockServerData } from './mocks/mock-server-data.type.js';
+export { Component } from './component/component.enum.js';
