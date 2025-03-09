@@ -1,15 +1,23 @@
-import { prop } from '@typegoose/typegoose';
-import { Amenitie, Coordinates, HousingType, Offer, Photo, User } from '../../types/index.js';
+import { defaultClasses, getModelForClass, modelOptions, prop, Ref } from '@typegoose/typegoose';
+import { Amenitie, Coordinates, HousingType, Photo } from '../../types/index.js';
+import { UserEntity } from '../user/index.js';
 
-export class OfferEntity implements Offer {
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
+export interface OfferEntity extends defaultClasses.Base {}
+
+@modelOptions({
+  schemaOptions: {
+    collection: 'offers',
+    timestamps: true,
+  }
+})
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
+export class OfferEntity extends defaultClasses.TimeStamps {
   @prop({ required: true })
   public title: string;
 
   @prop({ required: true })
   public description: string;
-
-  @prop({ required: true })
-  public publicationDate: Date;
 
   @prop({ required: true })
   public cityName: string;
@@ -44,8 +52,8 @@ export class OfferEntity implements Offer {
   @prop({ required: true })
   public amenities: Amenitie[];
 
-  @prop({ required: true })
-  public author: User;
+  @prop({ ref: UserEntity, required: true })
+  public userId: Ref<UserEntity>;
 
   @prop({ required: true })
   public commentCount: number;
@@ -53,3 +61,5 @@ export class OfferEntity implements Offer {
   @prop({ required: true })
   public coordinates: Coordinates;
 }
+
+export const OfferModel = getModelForClass(OfferEntity);
