@@ -1,6 +1,6 @@
 import EventEmitter from 'node:events';
 import { FileReader } from './file-reader.interface.js';
-import { Offer, City, Photo, HousingType, Amenitie, Coordinates } from '../../types/index.js';
+import { Offer, Photo, HousingType, Amenitie, Coordinates, User, UserType } from '../../types/index.js';
 import { createReadStream } from 'node:fs';
 
 export class TSVFileReader extends EventEmitter implements FileReader {
@@ -17,7 +17,7 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       title,
       description,
       publicationDate,
-      city,
+      cityName,
       previewImage,
       photos,
       isPremium,
@@ -28,7 +28,10 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       guestCount,
       rentalPrice,
       amenities,
-      author,
+      name,
+      email,
+      avatar,
+      type,
       commentCount,
       coordinates
     ] = line.split('\t');
@@ -37,7 +40,7 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       title,
       description,
       publicationDate: new Date(publicationDate),
-      city: city as City,
+      cityName,
       previewImage,
       photos: this.parsePhotos(photos),
       isPremium: this.parseIsPremium(isPremium),
@@ -48,10 +51,14 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       guestCount: Number.parseInt(guestCount, 10),
       rentalPrice: Number.parseInt(rentalPrice, 10),
       amenities: this.parseAmenities(amenities),
-      author: author,
+      author: this.parseUser(name, email, avatar, type as UserType),
       commentCount: Number.parseInt(commentCount, 10),
       coordinates: this.parseCoordinates(coordinates)
     };
+  }
+
+  private parseUser(name: string, email: string, avatar: string, type: UserType): User {
+    return { name, avatar, email, type };
   }
 
   private parsePhotos(photosString: string): Photo[] {
@@ -93,7 +100,10 @@ export class TSVFileReader extends EventEmitter implements FileReader {
         importedRowCount++;
 
         const parsedOffer = this.parseLineToOffer(completedRow);
-        this.emit('line', parsedOffer);
+
+        await new Promise((resolve) => {
+          this.emit('line', parsedOffer, resolve);
+        });
       }
     }
 

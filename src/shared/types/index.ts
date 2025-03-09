@@ -1,11 +1,11 @@
-export { Amenitie } from './offer/amentie.type.js';
+export { Amenitie } from './offer/amentie.enum.js';
 export { City } from './offer/city.type.js';
 export { Coordinates } from './offer/coordinates.type.js';
-export { HousingType } from './offer/housing-type.type.js';
+export { HousingType } from './offer/housing-type.enum.js';
 export { Offer } from './offer/offer.type.js';
 export { Photo } from './offer/photo.type.js';
 export { User } from './user/user.type.js';
-export { UserType } from './user/user-type.type.js';
+export { UserType } from './user/user-type.enum.js';
 export { Comment } from './comment/comment.type.js';
 export { MockServerData } from './mocks/mock-server-data.type.js';
 export { Component } from './component/component.enum.js';

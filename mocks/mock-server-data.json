@@ -88,12 +88,30 @@
       "An elegant penthouse offering stunning skyline views, perfect for a luxurious stay."
     ],
     "cities": [
-      "City1",
-      "City2",
-      "City3",
-      "City4",
-      "City5",
-      "City6"
+      {
+        "name": "Paris",
+        "coordinates": { "latitude": 48.85661, "longitude": 2.351499 }
+      },
+      {
+        "name": "Cologne",
+        "coordinates": { "latitude": 50.938361, "longitude": 6.959974 }
+      },
+      {
+        "name": "Brussels",
+        "coordinates": { "latitude": 50.846557, "longitude": 4.351697 }
+      },
+      {
+        "name": "Amsterdam",
+        "coordinates": { "latitude": 52.370216, "longitude": 4.895168 }
+      },
+      {
+        "name": "Hamburg",
+        "coordinates": { "latitude": 53.550341, "longitude": 10.000654 }
+      },
+      {
+        "name": "Dusseldorf",
+        "coordinates": { "latitude": 51.225402, "longitude": 6.776314 }
+      }
     ],
     "previewImages": [
       "cozy-apartment.jpg",
@@ -105,45 +123,40 @@
       "penthouse-skyline.jpg"
     ],
     "photos": [
-      { "src": "cozy-apartment-1.jpg" }, { "src": "cozy-apartment-2.jpg" },
-      { "src": "luxury-villa-1.jpg" }, { "src": "luxury-villa-2.jpg" },
-      { "src": "modern-loft-1.jpg" }, { "src": "modern-loft-2.jpg" },
-      { "src": "rustic-cabin-1.jpg" }, { "src": "rustic-cabin-2.jpg" },
-      { "src": "family-home-1.jpg" }, { "src": "family-home-2.jpg" },
-      { "src": "studio-beach-1.jpg" }, { "src": "studio-beach-2.jpg" },
-      
-        { "src": "penthouse-skyline-1.jpg" },
-        { "src": "penthouse-skyline-2.jpg" }
-      
+      { "src": "cozy-apartment-1.jpg" },
+      { "src": "cozy-apartment-2.jpg" },
+      { "src": "luxury-villa-1.jpg" },
+      { "src": "luxury-villa-2.jpg" },
+      { "src": "modern-loft-1.jpg" },
+      { "src": "modern-loft-2.jpg" },
+      { "src": "rustic-cabin-1.jpg" },
+      { "src": "rustic-cabin-2.jpg" },
+      { "src": "family-home-1.jpg" },
+      { "src": "family-home-2.jpg" },
+      { "src": "studio-beach-1.jpg" },
+      { "src": "studio-beach-2.jpg" },
+      { "src": "penthouse-skyline-1.jpg" },
+      { "src": "penthouse-skyline-2.jpg" }
     ],
-    "isPremium": [true, false, true, false, true, false, true],
-    "isFavorite": [true, false, true, false, true, false, true],
-    "housingTypes": [
-      "apartment",
-      "house",
-      "room",
-      "hotel",
-      "villa",
-      "studio",
-      "penthouse"
-    ],
+    "isPremium": [true, false],
+    "isFavorite": [true, false],
+    "housingTypes": ["apartment", "house", "room", "hotel"],
     "amenities": [
-      "Breakfast", "Air conditioning", "Laptop friendly workspace",
-      "Washer", "Towels", "Fridge",
-      "Baby seat", "Towels", "Fridge",
-      "Air conditioning", "Washer", "Fridge",
-      "Pool", "Garden", "BBQ",
-      "Beach access", "Kitchenette", "WiFi",
-      "Gym", "Sauna", "Balcony"
-    ],
-    "coordinates": [
-      { "latitude": 34.0522, "longitude": -118.2437 },
-      { "latitude": 36.1699, "longitude": -115.1398 },
-      { "latitude": 40.7128, "longitude": -74.006 },
-      { "latitude": 51.5074, "longitude": -0.1278 },
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 35.6895, "longitude": 139.6917 },
-      { "latitude": 55.7558, "longitude": 37.6176 }
+      "Breakfast",
+      "Air conditioning",
+      "Laptop friendly workspace",
+      "Baby seat",
+      "Washer",
+      "Towels",
+      "Fridge",
+      "Garden",
+      "BBQ",
+      "Beach access",
+      "Kitchenette",
+      "WiFi",
+      "Gym",
+      "Sauna",
+      "Balcony"
     ],
     "name": [
       "Иван Иванов",
