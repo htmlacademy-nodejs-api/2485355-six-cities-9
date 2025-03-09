@@ -1,9 +1,9 @@
-import { Amenitie } from '../offer/amentie.type.js';
+import { Amenitie } from '../offer/amentie.enum.js';
 import { City } from '../offer/city.type.js';
 import { Coordinates } from '../offer/coordinates.type.js';
-import { HousingType } from '../offer/housing-type.type.js';
+import { HousingType } from '../offer/housing-type.enum.js';
 import { Photo } from '../offer/photo.type.js';
-import { UserType } from '../user/user-type.type.js';
+import { UserType } from '../user/user-type.enum.js';
 import { User } from '../user/user.type.js';
 
 export type MockServerData = {

@@ -23,6 +23,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const title = getRandomItem(this.mockData.titles);
     const description = getRandomItem(this.mockData.descriptions);
     const city = getRandomItem(this.mockData.cities);
+    const cityName = city.name;
     const previewImage = getRandomItem(this.mockData.previewImages);
     const photos = getRandomItems(this.mockData.photos).map((photo) => photo.src).join(';');
     const isPremium = getRandomItem(this.mockData.isPremium) ? 'Да' : 'Нет';
@@ -36,7 +37,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const author = getRandomItem(this.mockData.authors);
     const { name, email, avatar, type } = author;
     const commentCount = generateRandomValue(MIN_COMMENTS_COUNT, MAX_COMMENTS_COUNT);
-    const coordinates = getRandomItem(this.mockData.coordinates);
+    const coordinates = city.coordinates;
     const coordinatesString = `${coordinates.latitude};${coordinates.longitude}`;
 
     const createdDate = dayjs()
@@ -47,7 +48,7 @@ export class TSVOfferGenerator implements OfferGenerator {
       title,
       description,
       createdDate,
-      city,
+      cityName,
       previewImage,
       photos,
       isPremium,

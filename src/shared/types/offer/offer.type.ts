@@ -1,6 +1,5 @@
-import { City } from './city.type.js';
-import { HousingType } from './housing-type.type.js';
-import { Amenitie } from './amentie.type.js';
+import { HousingType } from './housing-type.enum.js';
+import { Amenitie } from './amentie.enum.js';
 import { Coordinates } from './coordinates.type.js';
 import { Photo } from './photo.type.js';
 import { User } from '../user/user.type.js';
@@ -9,7 +8,7 @@ export type Offer = {
   title: string;
   description: string;
   publicationDate: Date;
-  city: City;
+  cityName: string;
   previewImage: string;
   photos: Photo[];
   isPremium: boolean;
