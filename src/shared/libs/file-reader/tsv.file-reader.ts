@@ -1,6 +1,6 @@
 import EventEmitter from 'node:events';
 import { FileReader } from './file-reader.interface.js';
-import { Offer, City, Photo, HousingType, Amenitie, Coordinates } from '../../types/index.js';
+import { Offer, City, Photo, HousingType, Amenitie, Coordinates, User, UserType } from '../../types/index.js';
 import { createReadStream } from 'node:fs';
 
 export class TSVFileReader extends EventEmitter implements FileReader {
@@ -28,7 +28,10 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       guestCount,
       rentalPrice,
       amenities,
-      author,
+      name,
+      email,
+      avatar,
+      type,
       commentCount,
       coordinates
     ] = line.split('\t');
@@ -48,10 +51,14 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       guestCount: Number.parseInt(guestCount, 10),
       rentalPrice: Number.parseInt(rentalPrice, 10),
       amenities: this.parseAmenities(amenities),
-      author: author,
+      author: this.parseUser(name, email, avatar, type as UserType),
       commentCount: Number.parseInt(commentCount, 10),
       coordinates: this.parseCoordinates(coordinates)
     };
+  }
+
+  private parseUser(name: string, email: string, avatar: string, type: UserType): User {
+    return { name, avatar, email, type };
   }
 
   private parsePhotos(photosString: string): Photo[] {
